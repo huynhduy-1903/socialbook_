@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialbook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5763162f23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png"></li>   
+                <li><img src="images/inbox.png"></li>  
+                <li><img src="images/video.png"></li>         
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/lucvstaylor.png">
+            </div>
+        </div>
+        <div class="settings-menu">
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/lucvstaylor.png">
+                    <div>
+                        <p>Huynh Duy</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png">Latest News</a>
+                <a href="#"><img src="images/friends.png">Friends</a>
+                <a href="#"><img src="images/group.png">Group</a>
+                <a href="#"><img src="images/marketplace.png">Marketplace</a>
+                <a href="#"><img src="images/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcut</p>
+                <a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png">Web Design course</a>
+                <a href="#"><img src="images/shortcut-3.png">Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png">Website Experts</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Lynn</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Aubree</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Minerva</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Alfredo</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/lucvstaylor.png">
+                    <div>
+                        <p>Huynh Duy</p>
+                        <small>Public <i class="fas fa-sort-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png" alt="">Live Video</a>
+                        <a href="#"><img src="images/photo.png" alt="">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png" alt="">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/lucvstaylor.png">
+                        <div>
+                            <p> Huynh Duy</p>
+                            <span>June 24 2021, 13:40 pm <i class="fas fa-sort-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Hello, this is my stupid page build by HTML and CSS, I want to become a Software Enginer</p>
+                <img src="images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 10</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/lucvstaylor.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-2.png">
+                        <div>
+                            <p> Bogan</p>
+                            <span>June 24 2021, 13:40 pm <i class="fas fa-sort-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Hello, this is my stupid page build by HTML and CSS, I want to become a Software Enginer</p>
+                <img src="images/feed-image-2.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 10</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/lucvstaylor.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-3.png">
+                        <div>
+                            <p> Asleynguci</p>
+                            <span>June 24 2021, 13:40 pm <i class="fas fa-sort-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Hello, this is my stupid page build by HTML and CSS, I want to become a Software Enginer</p>
+                <img src="images/feed-image-3.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 10</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/lucvstaylor.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-4.png">
+                        <div>
+                            <p> Jenie Huynh</p>
+                            <span>June 24 2021, 13:40 pm <i class="fas fa-sort-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Hello, this is my stupid page build by HTML and CSS, I want to become a Software Enginer</p>
+                <img src="images/feed-image-4.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 120</div>
+                        <div><img src="images/comments.png"> 10</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/lucvstaylor.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-shield-virus"></i> Covid-19</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>19</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>TikTok challenge</h4>
+                    <p><i class="fab fa-tiktok"></i> Khaby.Lame</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p> Bogan</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p> Wm McClure</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p> Alison Mina</p>
+            </div>  
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright 2021 - Stupid web - Guide by Easy Tutorials youtube channel</p>
+        <a href="https://www.youtube.com/watch?v=NljIHlZRTTE&t=4637s">Click here to visit</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
